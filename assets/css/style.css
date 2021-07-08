@@ -71,7 +71,132 @@ body{}
 /* BODY */
   
 /* HEADER */
-header{}
+header{
+    background-color: #00043e;
+}
+  
+.topo img{
+    margin: 25px 15px;
+    width: 50px;
+}
+.topo figcaption{
+    display: none;
+}
+.topo nav{
+    display: none;
+}
+
+section.secaoDestaque{
+    background-image: url(/assets/img/background-destaque.webp);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section.secaoDestaque h2{
+    font-size: 63px;
+    font-family:Montserrat;
+    color: white;
+    text-align: center;
+}
+section.secaoDestaque p{
+    font-size: 21px;
+    font-family: Lato;
+    color:white;
+}
+section.secaoDestaque .secaoDestaqueFormulario{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15%;
+    margin-top: 5%;
+    
+}
+section.secaoDestaque .secaoDestaqueFormulario input{
+    padding: 10px;
+    width: 30%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+}
+section.secaoDestaque .secaoDestaqueFormulario button{
+    font-size:14px;
+    padding: 10px;
+    font-family: Lato;
+    color:white;
+    background-color: #007aff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px;
+    border: none;
+}
+section.secaoDestaque .secaoDestaqueFormulario button:hover{
+    background-color: #00043e;
+}
+section.secaoSobre .flex{
+    width: 100%;
+    
+}
+section.secaoSobre .flex .flex-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+}
+section.secaoSobre .flex .flex-col h2{
+    font-size: 24px;
+    font-family:Montserrat;
+    text-align:left;
+    color:#303030;
+    margin: 10%;
+}
+section.secaoSobre .flex .flex-col ul li{
+    font-size: 19px;
+    text-align: left;
+    color:#818181;
+    font-family: Lato;
+    list-style:circle;
+    margin-bottom: 5%;
+}
+section.secaoSobre .flex .flex-col p{
+    font-size: 19px;
+    text-align: left;
+    color:#303030;
+    font-family: Lato;
+    margin-bottom: 10%;
+}
+section.secaoSobre .flex .flex-col span{
+    font-size: 15px;
+    color: #818181;
+    font-family: Lato;
+    margin: 20px;
+    align-items: center;
+    text-align: left;
+}
+section.secaoSobre .flex .flex-col button{
+    padding: 10px;
+    width: 50%;
+    font-family: Lato;
+    color:#303030;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px;
+    margin: 10px;
+}
+section.secaoSobre .flex .flex-col img{
+    max-width: 70%;
+    margin: auto;
+    
+}
+section.secaoSobre .flex .flex-col figcaption{
+    display: none;
+}
+
 /* HEADER */
   
 /* FOOTER */
@@ -97,7 +222,43 @@ main{}
   
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
+    @media screen and (min-width: 769px) {
+        header.topo{
+            display: flex;
+            flex-direction: row;
+        }
+          
+        header.topo img{
+            margin: 25px 15px;
+            width: 50px;
+        }
+        header.topo figcaption{
+            display: none;
+        }
+        header.topo nav{
+            display: block;
+        }
+        header.topo .large-container{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        header.topo .large-container ul{
+            flex-direction: row;
+            display: flex;
+            align-items: flex-end;
+            margin: 30px;
+
+        }
+        header.topo .large-container ul li{
+            margin: 20px;
+        }
+        header.topo .large-container ul li a{ 
+            color: white;
+            font-size: 13px;
+        }
+        
+    }
   
     @media screen and (min-width: 800px) {}
 /* MEDIA QUERIES */
