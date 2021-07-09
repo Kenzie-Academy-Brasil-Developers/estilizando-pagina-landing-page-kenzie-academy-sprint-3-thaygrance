@@ -343,7 +343,7 @@ main{}
         section.secaoSobre .flex .flex-col button{
             width: auto;
         };
-        section.secaoSobre, .background{
+        .background{
             display: flex;
         }
         
