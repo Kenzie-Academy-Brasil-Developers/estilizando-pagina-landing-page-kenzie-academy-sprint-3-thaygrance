@@ -4,7 +4,7 @@ Theme Name: Landing Page Kenzie Academy
 Theme URI: https://kenzie.com.br/
 Author: Kenzie Academy 
 Author URI: https://kenzie.com.br/
-Description: Descrção do thema.
+Description: Descrição do thema.
 Version: 1.0
 Text Domain: https://kenzie.com.br/
 
@@ -29,10 +29,23 @@ family=Lato -> Títulos, textos
 /* FONTS */
 
 /* VARIÁVEIS */
-:root{}
+:root {}
   
 /* GERAL */
-html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 100%;
+    list-style-type: none;
+}
+
+html, body, figure, div, ul, input, textarea, p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -61,7 +74,7 @@ div.container{
     margin:0 auto;
 }
 /* GERAL */
-  
+
 /* HTML */
 html{}
 /* HTML */
@@ -71,15 +84,416 @@ body{}
 /* BODY */
   
 /* HEADER */
-header{}
-/* HEADER */
+header{
+    background-color: #00043e;
+}
+
+header.topo .large-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.topo img{
+    margin: 25px 15px;
+    width: 50px;
+}
+.topo img.btn-hamburguer{
+    width: 20px;
+}
+.topo figcaption{
+    display: none;
+}
+.topo nav{
+    display: none;
+}
+
+section.secaoDestaque{
+    background-image: url(./../img/background-destaque.webp);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section.secaoDestaque h2{
+    font-size: 63px;
+    font-family:Montserrat;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+section.secaoDestaque p{
+    font-size: 21px;
+    font-family: Lato;
+    color:white;
+}
+section.secaoDestaque .secaoDestaqueFormulario{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15%;
+    margin-top: 5%;
+}
+section.secaoDestaque .secaoDestaqueFormulario input{
+    padding: 10px;
+    width: 30%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+}
+section.secaoDestaque .secaoDestaqueFormulario button{
+    font-size:14px;
+    padding: 10px;
+    font-family: Lato;
+    color:white;
+    background-color: #007aff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px;
+    border: none;
+    margin-bottom: 20px;
+}
+section.secaoDestaque .secaoDestaqueFormulario button:hover{
+    background-color: #00043e;
+}
+section.secaoSobre .flex{
+    width: 100%;
+    
+}
+section.secaoSobre .python{
+    flex-direction: column;
+    display: flex;
+}
+section.secaoSobre .flex .flex-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+}
+section.secaoSobre .flex .flex-col h2{
+    font-size: 24px;
+    font-family:Montserrat;
+    text-align:left;
+    color:#303030;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+section.secaoSobre .flex .flex-col p{
+    font-size: 19px;
+    text-align: left;
+    color:#303030;
+    font-family: Lato;
+    margin-bottom: 10%;
+}
+section.secaoSobre .flex .flex-col span{
+    font-size: 15px;
+    color: #818181;
+    font-family: Lato;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: left;
+}
+section.secaoSobre .flex .flex-col button{
+    padding: 10px;
+    width: 50%;
+    font-family: Lato;
+    color:#303030;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+section.secaoSobre .flex .flex-col button:hover{
+    background-color:#007aff;
+    color: white;
+}
+section.secaoSobre .flex .flex-col figure img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+section.secaoSobre .flex .flex-col img{
+    max-width: 70%;
+    margin: auto;
+}
+section.secaoSobre .flex .flex-col figcaption{
+    display: none;
+}
+section.secaoSobre .background{
+    background-color: #e2e2e2;
+}
+
+section.secaoSobre .flex .flexCol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+    
+}
+section.secaoSobre .flex .flexCol figure img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+section.secaoSobre .flex .flexCol img{
+    max-width: 50%;
+    margin: auto;
+}
+section.secaoSobre .flex .flexCol figcaption{
+    display: none;
+}
+section.secaoSobre .flex .flexCol h2{
+    font-size: 24px;
+    font-family:Montserrat;
+    text-align:center;
+    color:#303030;
+    margin: 10%;
+}
+section.secaoSobre .flex .flexCol ul{
+    margin-bottom: 10%;
+}
+section.secaoSobre .flex .flexCol ul li{
+    font-size: 19px;
+    text-align: left;
+    color:#818181;
+    font-family: Lato;
+    list-style:circle;
+    margin-bottom: 5%;
+}
   
 /* FOOTER */
-footer{}
+footer{
+    background-color: var(--background-color);
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+p.pFooter {
+    text-align: center;
+    color: #00043e;
+    font-size:32px;
+}
+
+p.pLink {
+    color:#FFFFFF;
+}
 /* FOOTER */
 
 /* INICIAL */
-main{}
+main{
+    flex-grow: 1;
+}
+
+.dev2 {
+    width: 100vw;
+    --main-font: 'Montserrat';
+    --main-color: #303030;
+    --second-font:'Lato';
+    --second-color: #818181;
+    --background-color: #FFFFFF;
+    --second-background-color: lightgrey;
+    --highlight-color:#00043e;
+    --secondary-highlight-color: #007aff;
+}
+
+section.dev2{
+}
+
+.secaoCursos {
+    display: flex;
+    flex-grow: 1;
+    text-align: center;
+    justify-content: center;
+    margin: 50px 80px;
+}
+
+.imgCursos {
+    width:100px;
+    justify-content: center;
+}
+
+.secaoCalendar {
+    text-align: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.liCalendario {
+    margin: 40px auto 100px auto;
+    border: 1px solid var(--highlight-color);
+    width:230px;
+    justify-items: center;
+
+}
+
+span.calendario-data {
+    background-color: var(--highlight-color);
+    padding: 40px 67px 30px 67px;
+    margin-top: 130px;
+    margin-left:-1px;
+    width: 230px;
+    font-size: 36px;
+    color:white;
+    font-family: var(--second-font);
+}
+
+.spandev2{
+    font-size: 32px;
+    color: var(--second-color);
+    font-family: var(--second-font);
+}
+
+.h3Calendario {
+    font-size:19px;
+    font-family: var(--second-font);
+    color: var(--main-color);
+    padding:60px 40px 30px 40px;
+}
+
+.h2dev2 {
+    font-family: var(--main-font);
+    font-size:24px;
+    color: var(--main-color);
+    padding:30px;
+}
+
+.p1dev2 {
+    font-family:var(--second-font);
+    font-size:19px;
+    color: var(--main-color);
+    padding-bottom: 60px;
+
+}
+
+.h3dev2 {
+    font-size:19px;
+    font-family: var(--second-font);
+    color: var(--main-color);
+    padding-bottom:30px;
+    padding-top:10px;
+
+}
+
+.pdev2{
+    font-size:15px;
+    font-family: var(--second-font);
+    line-height: 1.8;
+    color: var(--second-color);
+    text-align:center;
+    margin-bottom: 25px;
+    margin-right: 10px;
+    margin-left:10px;
+    
+}
+
+.h2dev2 {
+    font-family: var(--main-font);
+    font-size:24px;
+    color: var(--main-color);
+}
+
+.buttondev2 {
+    font-size: 15px;
+    color:var(--background-color);
+    font-family: var(--second-color);
+    margin:25px;
+    background-color: var(--secondary-highlight-color);
+    padding: 10px 60px;
+    border-radius: 5px;
+}
+
+.formdev2 {
+    font-size: 15px;
+    color:var(--second-color);
+    font-family: var(--second-font);
+}
+
+.calendario-data-rodape {
+    border-top: 1px solid var(--second-background-color);
+    padding-top:30px;
+}
+
+.secaoContato {
+    background-color: var(--second-background-color); 
+    justify-content: center;
+    text-align: center;
+    padding: 50px 55px 50px 55px;
+    flex-grow: 1;
+    width:100vw;
+}
+
+.h2desktop {
+    display:none;
+}
+
+.h2mobile {
+    font-family: var(--main-font);
+    font-size:24px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+.pContato {
+    font-size:15px;
+    font-family: var(--second-font);
+    line-height: 1.8;
+    color: var(--second-color);
+    text-align:left;
+}
+
+a {
+    text-decoration: none;
+    color: var(--second-color);
+}
+
+form{
+    background-color: lightgrey;
+}
+
+input{
+    width: 210px;
+    margin-top: 14px;
+    border:none;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid var(--second-color);
+}
+textarea{
+    border:none;
+    margin-top:14px;
+    width: 210px;
+    padding: 10px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid var(--second-color);
+}
+input.Submit{
+    justify-content: right;
+    width: 50px;
+    margin-left: 168px;
+    margin-top: 20px;
+    color:var(--main-color);
+}
+
+
+
+
+
 /* INICIAL */
 
 /* EXTRAS */
@@ -91,13 +505,196 @@ main{}
 ::-webkit-scrollbar-track-piece{}
 ::-webkit-scrollbar-thumb{}
 ::-webkit-scrollbar-corner{}
-::-webkit-resizer{}
+::-webkit-resizer{}  
 
-/* EXTRAS */
-  
 
-/* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
+
+
+@media screen and (min-width: 800px) {
+    /* MEDIA QUERIES */
+    header.topo{
+        display: flex;
+        flex-direction: row;
+    }
+      
+    header.topo img{
+        margin: 25px 15px;
+        width: 50px;
+    }
+    header.topo figcaption{
+        display: none;
+    }
+    header.topo img.btn-hamburguer{
+        display: none;
+    }
+    header.topo nav{
+        display: block;
+    }
+    header.topo .large-container{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header.topo .large-container ul{
+        flex-direction: row;
+        display: flex;
+        align-items: flex-end;
+        margin: 20px;
+
+    }
+    header.topo .large-container ul li{
+        margin: 20px;
+    }
+    header.topo .large-container ul li a{ 
+        color: white;
+        font-size: 13px;
+        text-decoration: none;
+    }
+    header.topo .large-container ul li a:hover{
+        color: #818181;
+    }
   
-    @media screen and (min-width: 800px) {}
-/* MEDIA QUERIES */
+    section.secaoDestaque h2{
+        margin-top: 150px;
+    }
+    section.secaoSobre .flex .python{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 60px;
+    }
+    section.secaoSobre .flex .flex-col h2{
+        text-align: left;
+    }
+    section.secaoSobre .flex .flex-col button{
+        width: auto;
+    };
+    .background{
+        display: flex;
+    }
+
+    body{
+        width:100vw;
+    }
+    footer{
+        width: 100vw;
+        margin-bottom: 60px;
+    }
+
+    p.pLink {
+        font-size:15px;
+        font-family: 'Lato';
+        line-height: 1.8;
+        color: #818181;
+        text-align:center;
+        
+    }
+    a.footer {
+        text-decoration:blue;
+        color:blue;
+    }
+
+    main{
+        min-width: 800px;
+    }
+    .ulCursos {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .liCursos {
+        width: 33%;
+    }
+
+    ul.calendario {
+        display:flex;
+        flex-direction:row;
+        width:100vw;
+        justify-content: center;       
+    }
+
+    .liCalendario {
+        width:230px;
+    }
+
+    span.calendario-data {
+        width: 100vw;
+    }
+
+    .secaoContato {
+        display:flex;
+        justify-content: center;
+        width:100vw;
+    }
+
+    .h2mobile {
+        display:none;
+    }
+
+    .h2desktop {
+        font-family: var(--main-font);
+        font-size: 24px;
+        color: var(--main-color);
+        display: block;
+        position: absolute;
+        margin-top: 30px;
+    }
+
+    .secaoContato-informacoes {
+        width: 50%;
+        margin-top: 75px;
+        margin-left: 80px;
+    }
+
+    form { 
+        width: 50%;
+        margin-top: 68px;
+        justify-content: flex-start;
+        display: block;
+    }
+
+    input#nome {
+        position: absolute;
+        display: block;
+        width: 210px;
+        margin-top: 14px;
+        margin-left: 0px;
+        border: none;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid var(--second-color);
+        justify-content: flex-start;
+    }
+
+    input#email {
+        width: 210px;
+        margin-top: 14px;
+        margin-left: 97px;
+        border: none;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid var(--second-color);
+    }
+
+    textarea {
+        margin-right: 140px;
+        border: none;
+        margin-top: 14px;
+        width: 450px;
+        padding: 10px;
+        height: 100px;
+        border-radius: 5px;
+        border: 1px solid var(--second-color);
+    }
+    input.Submit {
+        justify-content: right;
+        width: 50px;
+        margin-left: 258px;
+        margin-top: 20px;
+        color: var(--main-color);
+    }
+}
+
+
+    
