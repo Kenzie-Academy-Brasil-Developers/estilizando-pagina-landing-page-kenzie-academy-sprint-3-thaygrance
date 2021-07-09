@@ -73,11 +73,19 @@ body{}
 /* HEADER */
 header{
     background-color: #00043e;
+
 }
-  
+header.topo .large-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .topo img{
     margin: 25px 15px;
     width: 50px;
+}
+.topo img.btn-hamburguer{
+    width: 20px;
 }
 .topo figcaption{
     display: none;
@@ -87,7 +95,7 @@ header{
 }
 
 section.secaoDestaque{
-    background-image: url(/assets/img/background-destaque.webp);
+    background-image: url(./../img/background-destaque.webp);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -99,6 +107,7 @@ section.secaoDestaque h2{
     font-family:Montserrat;
     color: white;
     text-align: center;
+    margin-top: 50px;
 }
 section.secaoDestaque p{
     font-size: 21px;
@@ -121,6 +130,7 @@ section.secaoDestaque .secaoDestaqueFormulario input{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border: none;
+    margin-bottom: 20px;
 }
 section.secaoDestaque .secaoDestaqueFormulario button{
     font-size:14px;
@@ -131,6 +141,7 @@ section.secaoDestaque .secaoDestaqueFormulario button{
     border-top-right-radius: 5px;
     border-bottom-right-radius:5px;
     border: none;
+    margin-bottom: 20px;
 }
 section.secaoDestaque .secaoDestaqueFormulario button:hover{
     background-color: #00043e;
@@ -138,6 +149,10 @@ section.secaoDestaque .secaoDestaqueFormulario button:hover{
 section.secaoSobre .flex{
     width: 100%;
     
+}
+section.secaoSobre .python{
+    flex-direction: column;
+    display: flex;
 }
 section.secaoSobre .flex .flex-col{
     display: flex;
@@ -152,16 +167,10 @@ section.secaoSobre .flex .flex-col h2{
     font-family:Montserrat;
     text-align:left;
     color:#303030;
-    margin: 10%;
+    margin-top: 70px;
+    margin-bottom: 50px;
 }
-section.secaoSobre .flex .flex-col ul li{
-    font-size: 19px;
-    text-align: left;
-    color:#818181;
-    font-family: Lato;
-    list-style:circle;
-    margin-bottom: 5%;
-}
+
 section.secaoSobre .flex .flex-col p{
     font-size: 19px;
     text-align: left;
@@ -173,7 +182,7 @@ section.secaoSobre .flex .flex-col span{
     font-size: 15px;
     color: #818181;
     font-family: Lato;
-    margin: 20px;
+    margin-bottom: 20px;
     align-items: center;
     text-align: left;
 }
@@ -186,18 +195,72 @@ section.secaoSobre .flex .flex-col button{
     border-bottom-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-right-radius:5px;
-    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+section.secaoSobre .flex .flex-col button:hover{
+    background-color:#007aff;
+    color: white;
+}
+section.secaoSobre .flex .flex-col figure img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
 }
 section.secaoSobre .flex .flex-col img{
     max-width: 70%;
     margin: auto;
-    
 }
 section.secaoSobre .flex .flex-col figcaption{
     display: none;
 }
+section.secaoSobre .background{
+    background-color: #e2e2e2;
+}
 
-/* HEADER */
+section.secaoSobre .flex .flexCol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+    
+}
+section.secaoSobre .flex .flexCol figure img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+section.secaoSobre .flex .flexCol img{
+    max-width: 50%;
+    margin: auto;
+}
+section.secaoSobre .flex .flexCol figcaption{
+    display: none;
+}
+section.secaoSobre .flex .flexCol h2{
+    font-size: 24px;
+    font-family:Montserrat;
+    text-align:center;
+    color:#303030;
+    margin: 10%;
+}
+section.secaoSobre .flex .flexCol ul{
+    margin-bottom: 10%;
+}
+section.secaoSobre .flex .flexCol ul li{
+    font-size: 19px;
+    text-align: left;
+    color:#818181;
+    font-family: Lato;
+    list-style:circle;
+    margin-bottom: 5%;
+}
   
 /* FOOTER */
 footer{}
@@ -235,6 +298,9 @@ main{}
         header.topo figcaption{
             display: none;
         }
+        header.topo img.btn-hamburguer{
+            display: none;
+        }
         header.topo nav{
             display: block;
         }
@@ -247,7 +313,7 @@ main{}
             flex-direction: row;
             display: flex;
             align-items: flex-end;
-            margin: 30px;
+            margin: 20px;
 
         }
         header.topo .large-container ul li{
@@ -256,6 +322,29 @@ main{}
         header.topo .large-container ul li a{ 
             color: white;
             font-size: 13px;
+            text-decoration: none;
+        }
+        header.topo .large-container ul li a:hover{
+            color: #818181;
+        }
+      
+        section.secaoDestaque h2{
+            margin-top: 150px;
+        }
+        section.secaoSobre .flex .python{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 60px;
+        }
+        section.secaoSobre .flex .flex-col h2{
+            text-align: left;
+        }
+        section.secaoSobre .flex .flex-col button{
+            width: auto;
+        };
+        section.secaoSobre, .background{
+            display: flex;
         }
         
     }
